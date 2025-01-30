@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ck53467_fk_1738262119472-pr-trigger-input-set
+  identifier: Build_ck53467_fk_1738262119472prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_ck53467_fk_1738262119472
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
